@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --fonte-primaria: "Hanken Grotesk", sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,13 +18,14 @@ body {
 }
 
 .card-azul {
-    background: linear-gradient(0deg, rgba(60,37,176,1) 0%, rgba(74,41,230,1) 100%);
+    background: linear-gradient(0deg, rgba(60, 37, 176, 1) 0%, rgba(74, 41, 230, 1) 100%);
     color: white;
+    font-family: var(--fonte-primaria);
+    font-weight: 300;
     width: 50%;
     height: 100%;
-    font-size: 18px;
+    font-size: 20px;
     border-radius: 20px;
-    font-size: 18px;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -51,7 +56,7 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: 170px;
     height: 180px;
-    font-family: "Hanken Grotesk", sans-serif;
+    font-family: var(--fonte-primaria);
     font-size: 18px;
     display: flex;
     text-align: center;
@@ -64,20 +69,82 @@ section {
 .number h2 {
     font-size: 50px;
     font-weight: 800;
-    font-family: "Hanken Grotesk", sans-serif;
+    font-family: var(--fonte-primaria);
 }
 
 div h2 {
     font-size: 24px;
-    font-family: "Hanken Grotesk", sans-serif;
+    font-family: var(--fonte-primaria);
     font-weight: 600;
 }
 
-.resumo_caracteristica{
-    font-family: "Hanken Grotesk", sans-serif;
+.card-branco {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.resumo_caracteristica {
+    font-family: var(--fonte-primaria);
     font-size: 180%;
     font-weight: 800;
-    margin-bottom: 65%;
+    margin-bottom: 79%;
     text-align: start;
-    margin-left: 10%;
+}
+
+.titulo {
+    justify-content: start;
+    justify-items: start;
+    flex-direction: column;
+    display: flex;
+    font-size: 19px;
+    font-family: var(--fonte-primaria);
+    font-weight: 800;
+    text-align: start !important;
+    width: 100%;
+    margin-left: 45px;
+    margin-top: 12px;
+}
+
+h4 {
+    font-size: 18px;
+    font-family: var(--fonte-primaria);
+    justify-content: start;
+    justify-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sub_reacoes {
+    border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 15px;
+    width: 80%;
+    font-family: var(--fonte-primaria);
+    margin: 6px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.botao {
+    font-family: var(--fonte-primaria);
+    width: 50%;
+    background-color: #373f5d;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    width: 75%;
+    height: 50px;
 }
